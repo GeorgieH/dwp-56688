@@ -10,8 +10,8 @@ Node application written in JavaScript using the Express framework.
 
 To run the application, change directory to this folder, then:
 
-- npm install
-- npm start
+- `npm install`
+- `npm start`
 
 Modifying source files and saving them after starting the application will trigger a hot reload.
 
@@ -19,14 +19,14 @@ Once running, the following API calls can be made:
 
 ## Get users by city
 
-Route: `/city/:city/users`
-Example: `curl http://localhost:3000/city/London/users`
+- Route: `/city/:city/users`
+- Example: `curl http://localhost:3000/city/London/users`
 
 # Testing
 
-To run the tests (which includes code coverage):
+To run the unit tests (which includes code coverage):
 
-- npm test
+- `npm test`
 
 # Development environment
 
