@@ -4,19 +4,34 @@ API that lists users
 
 # Description
 
-Node application written in JavaScript
+Node application written in JavaScript using the Express framework.
 
 # Running
 
-npm install
-npm start
+To run the application, change directory to this folder, then:
+
+- npm install
+- npm start
+
+Modifying source files and saving them after starting the application will trigger a hot reload.
+
+Once running, the following API calls can be made:
+
+## Get users by city
+
+Route: `/city/:city/users`
+Example: `curl http://localhost:3000/city/London/users`
 
 # Testing
 
-npm test
+To run the tests (which includes code coverage):
 
-# Development
+- npm test
+
+# Development environment
+
+Here are the non-functional highlights:
 
 - Hot reloading via nodemon
-- Linting with eslint
-- Unit testing and coverage with jest
+- Linting with ESLint
+- Unit testing and coverage with Jest
