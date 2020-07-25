@@ -44,6 +44,14 @@ To run the unit tests (which includes code coverage):
 
 - `npm test`
 
+# Containerization
+
+A Dockerfile is included which clones the repository into the image on build. To get it working, change directory to this folder, then:
+
+- `docker build -t george.howarth/users-api .`
+- `docker run -p 3000:3000 -d george.howarth/users-api`
+- (TEST) `curl http://localhost:3000/location/London/users?radius=80467.2`
+
 # Development environment
 
 Highlights:
@@ -51,6 +59,7 @@ Highlights:
 - Hot reloading via nodemon
 - Linting with ESLint
 - Unit testing and coverage with Jest
+- Containerized version of the app with Docker
 
 # Possible improvements
 
