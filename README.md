@@ -19,7 +19,7 @@ Once running, the following API calls can be made:
 
 ## Get users by location
 
-This API is used to get users who are listed as either living in the specified location, or whose coordinates are within a given radius relative to the centre of the location. The radius is expressed in metres. The example effectively uses a radius of 50 miles.
+This API is used to get users who are listed as either living in the specified location, or whose coordinates are within a given radius relative to the centre of the location. The radius is expressed in metres. The example get users who are either listed as living in London or whose coordinates are within a radius of 50 miles relative to the centre of London.
 
 - Route: `GET /location/:location/users`
 - Example: `curl http://localhost:3000/location/London/users?radius=80467.2`
@@ -51,3 +51,9 @@ Highlights:
 - Hot reloading via nodemon
 - Linting with ESLint
 - Unit testing and coverage with Jest
+
+# Possible improvements
+
+- Better unit test coverage
+- Acceptance tests
+- Use an external API to get the coordinates of a given location
