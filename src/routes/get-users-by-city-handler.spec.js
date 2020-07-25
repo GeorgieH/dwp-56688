@@ -1,9 +1,9 @@
 const getUsersByCity = require('../integration/get-users-by-city')
 const getUsersByCityHandler = require('./get-users-by-city-handler')
-const getUsersByCityRequest = require('../integration/get-users-by-city-request')
+const getUsersByCityRequest = require('../requests/get-users-by-city-request')
 
 jest.mock('../integration/get-users-by-city')
-jest.mock('../integration/get-users-by-city-request')
+jest.mock('../requests/get-users-by-city-request')
 
 describe('getUsersByCityHandler', () => {
   it('should respond with users', async () => {
