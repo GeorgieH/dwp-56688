@@ -1,5 +1,5 @@
 const getUsersByCity = require('../integration/get-users-by-city')
-const getUsersByCityRequest = require('../integration/get-users-by-city-request')
+const getUsersByCityRequest = require('../requests/get-users-by-city-request')
 
 module.exports = async function (req, res, next) {
   try {
