@@ -1,6 +1,6 @@
-const getUsersWithinRadius = require('../domain/get-users-within-radius')
 const getUsers = require('../integration/get-users')
 const getUsersByCoordinatesRequest = require('../requests/get-users-by-coordinates-request')
+const getUsersWithinRadius = require('../domain/get-users-within-radius')
 
 module.exports = async function (req, res, next) {
   const { latitude, longitude, radius } = req.body

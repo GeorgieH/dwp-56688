@@ -10,9 +10,6 @@ function getError (subject, min, max) {
 }
 
 function withinBounds (subject, min, max) {
-  if (_.isString(subject)) {
-    subject = parseFloat(subject)
-  }
   return _.isFinite(subject) && subject >= min && subject <= max
 }
 
