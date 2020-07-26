@@ -19,10 +19,14 @@ Once running, the following API calls can be made:
 
 ## Get users by location
 
-This API is used to get users who are listed as either living in the specified location, or whose coordinates are within a given radius relative to the centre of the location. The radius is expressed in metres. The example get users who are either listed as living in London or whose coordinates are within a radius of 50 miles relative to the centre of London.
+This API is used to get users who are listed as either living in the specified location, or whose coordinates are within a given radius relative to the centre of the location. The radius is expressed in metres. The example gets users who are either listed as living in London or whose coordinates are within a radius of 50 miles relative to the centre of London.
 
 - Route: `GET /location/:location/users`
 - Example: `curl http://localhost:3000/location/London/users?radius=80467.2`
+
+### Constraints
+
+- `radius` must be a finite, non-negative number
 
 ## Get users by city
 
@@ -37,6 +41,12 @@ This API is used to get users who are listed as having coordinates within a give
 
 - Route: `POST /coordinates/users`
 - Example: `curl --header "Content-Type: application/json" --request POST --data '{"latitude":51.507351,"longitude":-0.127758,"radius":80467.2}' http://localhost:3000/coordinates/users`
+
+### Constraints
+
+- `latitude` must be a number within the range [-90, 90]
+- `longitude` must be a number within the range [-180, 180]
+- `radius` must be a finite, non-negative number
 
 # Testing
 
