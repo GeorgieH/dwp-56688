@@ -26,7 +26,7 @@ This API is used to get users who are listed as either living in the specified l
 
 ## Get users by city
 
-This API is used to get users who are listed as living in the specified city.
+This API is used to get users who are listed as living in the specified city. The example gets users who are listed as living in London.
 
 - Route: `GET /city/:city/users`
 - Example: `curl http://localhost:3000/city/London/users`
